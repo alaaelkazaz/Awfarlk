@@ -1,0 +1,16 @@
+@font-face {
+	font-family: 'Cairo';
+    src: url('/fonts/Cairo-Black.ttf') format('ttf'),
+        url('/fonts/Cairo-Black.ttf') format('tff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Dubai';
+    src: url('/fonts/Cairo-Regular.tff') format('tff'),
+        url('/fonts/Cairo-Regular.tff') format('tff');
+    font-weight: normal;
+    font-style: normal;
+}

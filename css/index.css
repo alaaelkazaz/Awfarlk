@@ -1,0 +1,46 @@
+body{
+	text-align: right;
+	direction: rtl;  /*for setting all the pagetothe arabic direction right peeeople*/
+	overflow: auto;
+    font-family: 'Cairo', sans-serif;
+    background-color: #f8f9fa !important;
+}
+/*--------------------------------------------------------------
+1.0 Navbar 
+--------------------------------------------------------------*/
+#logo{
+    width: 50px;
+    height: 50px;
+}
+/*--------------------------------------------------------------
+2.0 Adding product -- Home Page 
+--------------------------------------------------------------*/
+.add-product h1{
+    text-align: center;
+}
+
+.add-product .input-group-text{
+    background-color: #0099CB;
+    color: #fff;
+    width: 100px;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------
+2.0 Orders
+--------------------------------------------------------------*/
+.card .input-group-text{
+    background-color:  #0099CB;
+    color: #fff;
+}
+
+/*--------------------------------------------------------------
+4.0 Footer
+--------------------------------------------------------------*/
+footer{
+    background-color:#007bff ;
+    position:relative;
+    top:230px;
+    width: 100%;
+    height: 30px;
+}
