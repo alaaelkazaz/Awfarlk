@@ -2,36 +2,33 @@
 <html>
     <head>
         <title>Awfarlk</title>
+
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600&display=swap" rel="stylesheet"> 
-         <link rel="stylesheet"  href="./css/bootstrap.css">
+        <link rel="stylesheet"  href="./css/bootstrap.css">
         <link rel="stylesheet" href="./css/index.css" >
 
-         <script src="https://kit.fontawesome.com/a5d0615e58.js" crossorigin="anonymous"></script>
-         <script >
-  function PrintDiv(divname) {
-      var printcontent= document.getElementById(divname).innerHTML;
-      w=window.open();
-      w.document.write(printcontent);
-      w.print();
-      w.close();
-
-  }
-</script>
+        <script src="https://kit.fontawesome.com/a5d0615e58.js" crossorigin="anonymous"></script>
 
     </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
       <a class="navbar-brand" href="#"><img id="logo" src="./index.jpg"></a>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
         <ul class="navbar-nav ">
+
           <li class="nav-item active">
+
             <a class="nav-link" href="index.html">الرئيسية<span class="sr-only">(current)</span></a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="orders.html">الطلبات</a>
           </li>
@@ -43,106 +40,78 @@
    <!-- Adding A product Section -->
 
     <div class="col-sm-9 container" >
-    <div class="add-product ">
-      <h1 class="mb-3 mt-3">إضافة منتج</h1>
-  <div class="print-content">
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="product-name">اسم المنتج</span>
+
+      <div class="add-product ">
+
+        <h1 class="mb-3 mt-3">إضافة منتج</h1>
+
+        <div class="print-content">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="product-name">اسم المنتج</span>
+            </div>
+
+            <input type="text" class="form-control distInput" id="input-product-name" aria-describedby="product-name">
+          </div>
+
+           <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="product-detail">التفاصيل</span>
+            </div>
+
+            <input type="text" class="form-control distInput" id="-input-product-detail" aria-describedby="product-detail">
+          </div>
+
+           <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="product-price">السعر</span>
+            </div>
+
+            <input type="text" class="form-control distInput" id="input-product-price" aria-describedby="product-price">
+          </div>
+
+
+           <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="product-address">العنوان</span>
+            </div>
+
+            <input type="text" class="form-control distInput" id="-input-product-address" aria-describedby="product-address">
+          </div>
+
+
+           <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="product-phone">رقم الهاتف</span>
+            </div>
+
+            <input type="text" class="form-control distInput" id="-input-product-phone" aria-describedby="product-phone">
+          </div>
+
+           <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="product-dist">اسم الموزع</span>
+            </div>
+            
+            <input type="text" class="form-control distInput" id="input-product-dist" aria-describedby="product-dist">
+          </div>
+
+          </div>
+           <!--<input type="submit" name="print" value="طباعة" onclick="printPageArea('print-content')"> -->
       </div>
-      <input type="text" class="form-control distInput" id="input-product-name" aria-describedby="product-name">
-    </div>
+        <!--  <button style="width: 100px;" class="btn btn-warning mb-3">طباعة</button> -->
+          
 
-     <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="product-detail">التفاصيل</span>
-      </div>
-      <input type="text" class="form-control distInput" id="-input-product-detail" aria-describedby="product-detail">
-    </div>
+        </div>
 
-     <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="product-price">السعر</span>
-      </div>
-      <input type="text" class="form-control distInput" id="input-product-price" aria-describedby="product-price">
-    </div>
+  <!---------------------------------JS Support Files For Bootstrap----------------------------------- !-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
 
 
-     <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="product-address">العنوان</span>
-      </div>
-      <input type="text" class="form-control distInput" id="-input-product-address" aria-describedby="product-address">
-    </div>
-
-
-     <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="product-phone">رقم الهاتف</span>
-      </div>
-      <input type="text" class="form-control distInput" id="-input-product-phone" aria-describedby="product-phone">
-    </div>
-
-     <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="product-dist">اسم الموزع</span>
-      </div>
-      <input type="text" class="form-control distInput" id="input-product-dist" aria-describedby="product-dist">
-    </div>
-
-    </div>
-     <!--<input type="submit" name="print" value="طباعة" onclick="printPageArea('print-content')"> -->
-</div>
-  <!--  <button style="width: 100px;" class="btn btn-warning mb-3">طباعة</button> -->
-    
-
-    </div>
-<!--
-    <footer>
-        hello there 
-    </footer>  -->
-
-<!---------------------------------JS Support Files For Bootstrap----------------------------------- !-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script type="text/javascript" src="./js/index.js"></script>
-
-<script type="text/javascript">
-  function printPageArea(areaID){
-    var printContent = document.getElementById(areaID);
-    WinPrint.document.write('<html><head>');
-WinPrint.document.write('<link rel="stylesheet" href="./css/bootstrap.css">');
-WinPrint.document.write('<link rel="stylesheet" href="./css/index.css">');
-WinPrint.document.write('</head><body onload="print();close();">');
-WinPrint.document.write(printContent.innerHTML);
-WinPrint.document.write('</body></html>');
-WinPrint.document.close();
-WinPrint.focus();
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-    var WinPrint = window.open('', '', 'width=900,height=650,toolbar=0,scrollbars=0,status=0');
-    WinPrint.document.write(printContent.innerHTML);
-    WinPrint.document.write('<link rel="stylesheet" href="./css/bootstrap.css">');
-      WinPrint.document.write('<link rel="stylesheet" href="./css/index.css">');
-    WinPrint.document.close();
-    WinPrint.focus();
-    WinPrint.print();
-    WinPrint.close(); */
-}
-
-</script>
-</body>
+  </body>
 
 </html>
